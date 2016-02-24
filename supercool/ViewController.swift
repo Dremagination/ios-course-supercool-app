@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var dopeLogo: UIImageView!
+    @IBOutlet weak var coolbg: UIImageView!
+    @IBOutlet weak var UnCoolButton: UIButton!
+ 
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +24,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func MakeMeCoolAgain(sender: AnyObject) {
+        dopeLogo.hidden = false
+        coolbg.hidden = false
+        UnCoolButton.hidden = true 
+    }
 
 }
 
